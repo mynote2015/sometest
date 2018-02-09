@@ -1,0 +1,28 @@
+L2TP/IPSec-pptp  vpn一键安装脚本
+一、 L2TP/IPSec vpn一键安装脚本
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/l2tp.sh
+chmod +x l2tp.sh
+./l2tp.sh
+
+二、pptp vpn一键安装脚本
+wget http://mirrors.linuxeye.com/scripts/vpn_centos.sh
+chmod +x ./vpn_centos.sh
+./vpn_centos.sh
+
+三、添加vpn登陆账号
+在/etc/ppp/chap-secrets里添加和删除vpn账号，比如我添加一个账号：
+veaxen * 123 *c
+这样就可以使用veaxen这个账号进行登陆了，密码是123，可选用pptp登陆也可以选用用L2TP/IPSec登陆。第二中登陆方式可能还需要与共享秘钥(PSK)，这个可以在/etc/ipsec.secrets里增加或者修改。
+
+
+
+CentOS 6/7 安装配置 Rinetd 端口转发工具
+安装
+wget http://www.boutell.com/rinetd/http/rinetd.tar.gz
+tar zxvf rinetd.tar.gz
+cd rinetd
+mkdir -p /usr/man/man8
+make && make install
+
+vim /etc/rinetd.conf
+rinetd -c /etc/rinetd.conf
