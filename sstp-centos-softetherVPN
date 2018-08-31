@@ -1,0 +1,5 @@
+1.centos中安裝softetherVPN。安裝過程，softetherVPN服務一鍵脚本的啓用
+https://www.softether.org/4-docs/1-manual/3._SoftEther_VPN_Server_Manual/3.3_VPN_Server_Administration
+2.配置softetherVPN的管理密碼，在windows中使用softetherVPN管理工具管理，進行後續配置
+2.softetherVPN配置。注意secureNAT和local brige的關係
+https://www.softether.org/index.php?title=4-docs/1-manual/3._SoftEther_VPN_Server_Manual/3.7_Virtual_NAT_%26_Virtual_DHCP_Servers
