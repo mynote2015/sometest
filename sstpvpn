@@ -3,6 +3,7 @@ https://social.technet.microsoft.com/Forums/windows/en-US/45e3fac2-46bf-43b7-807
 
 1#需要將vpn連接名設置為證書中的使用者，參考1，因爲使用的是内部證書。配合使用需要將windows中的hosts文件中添加相應的解析。
 2#出现了0x80072746：遠端主機已強制關閉一個現存的連線。可以尝试在客户端重新导入证书。或者服务端重新安装证书，客户端再导入。
+3#sstp证书和ssl证书不一致。https://nigmenog.com/2018/11/04/error-when-selecting-new-ssl-certificate-for-sstp-vpn-in-rras-web-listener-http-sys/
 
 修改sstp默認端口方法，修改完畢，客戶端在VPN地址后加上端口信息(XXXX:alternativePort)
 https://blogs.technet.microsoft.com/rrasblog/2007/03/06/setting-up-the-sstp-listener-and-verifying-it/
